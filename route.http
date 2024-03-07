@@ -3,21 +3,20 @@ POST http://localhost:3000/customers
 Content-Type: application/json
 
 {
-  "name": "lucas 3",
+  "name": "lucas 4",
   "email": "test@test"
 }
 
 ###
-GET http://localhost:3000/customers/65e911e2adfbd3e3029d0900
+GET http://localhost:3000/customers/
 
 ###
 
-PUT http://localhost:3000/customers/65e911e2adfbd3e3029d0900
+PUT http://localhost:3000/customers/65e8de939ed0164626886666
 Content-Type: application/json
 
 {
-  "name": "Teste hora",
-  "status": true
+  "name": "Teste hora 2"
 }
 
 ###
