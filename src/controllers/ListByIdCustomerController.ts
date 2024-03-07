@@ -10,7 +10,6 @@ class ListByIdCustomerController {
     const costumer = await customerService.execute({ id });
 
     res.send(costumer);
-    console.log(costumer)
   }
 }
 

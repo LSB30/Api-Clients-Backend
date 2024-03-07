@@ -12,4 +12,13 @@ GET http://localhost:3000/customers/65e911e2adfbd3e3029d0900
 
 ###
 
+PUT http://localhost:3000/customers/65e911e2adfbd3e3029d0900
+Content-Type: application/json
+
+{
+  "name": "Teste hora",
+  "status": true
+}
+
+###
 DELETE http://localhost:3000/customers?id=65e8f1ac27f68c5abcd10301
