@@ -10,16 +10,18 @@ class ListByIdCustomerService {
       throw new Error("Invalid");
     }
 
-    const findcustomer = await prismaClient.customer.findUnique({
+    const findCustomer = await prismaClient.customer.findUnique({
       where: {
         id: id,
       },
     });
-    if (!findcustomer) {
+
+    console.log(findCustomer)
+    if (!findCustomer) {
       throw new Error("User not found");
     }
-
-    return findcustomer;
+    
+    return findCustomer;
   }
 }
 
